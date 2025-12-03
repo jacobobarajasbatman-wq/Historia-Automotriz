@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Collections — Autos Icónicos</title>
+  <meta name="description" content="Colección de autos icónicos por continente.">
+
+  <style>
+    :root{--bg:#f4f6f8;--card:#ffffff;--accent:#1f6feb;--muted:#6b7280;--radius:12px}
+    *{box-sizing:border-box;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif}
+    body{margin:0;background:var(--bg);color:#0b1220}
+    header{background:linear-gradient(90deg,#0f172a 0%, #042a6b 100%);color:#fff;padding:28px 16px}
+    .container{max-width:1100px;margin:20px auto;padding:0 16px}
+    h1{margin:0;font-size:28px;letter-spacing:-0.5px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+    nav a{background:rgba(255,255,255,0.08);color:#fff;padding:8px 12px;border-radius:999px;text-decoration:none;font-size:14px}
+
+    section.catalog{margin-top:18px}
+    .continent{margin-bottom:28px}
+    .continent h2{display:flex;align-items:center;gap:12px;font-size:20px;margin:0 0 10px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+
+    .card{background:var(--card);padding:14px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,18,31,0.06);display:flex;gap:12px;align-items:flex-start}
+    .thumb{width:120px;height:80px;flex:0 0 120px;border-radius:8px;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+
+    .meta{flex:1}
+    .meta h3{margin:0 0 6px;font-size:16px}
+    .meta p{margin:0;color:var(--muted);font-size:14px}
+    .year{font-weight:600;color:var(--accent);font-size:13px}
+
+    .tags{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#eef2ff;padding:6px 8px;border-radius:999px;font-size:12px;color:#0b2f8a}
+
+    @media(max-width:520px){.thumb{width:96px;height:64px}}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <h1>My Collections — Autos Icónicos</h1>
+    <p class="lead">Modelos históricos con imágenes reales.</p>
+
+    <nav>
+      <a href="#europa">Europa</a>
+      <a href="#norte-america">Norteamérica</a>
+      <a href="#asia">Asia</a>
+      <a href="#sur-america">Sudamérica</a>
+      <a href="#oceania">Oceanía</a>
+      <a href="#africa">África</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="catalog">
+
+<!-- EUROPA -->
+<article class="continent" id="europa">
+  <h2>Europa — Clásicos</h2>
+  <div class="cards">
+
+    <!-- Beetle -->
+    <article class="card" data-keywords="volkswagen beetle 1938 alemania europa">
+      <div class="thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/VW_Käfer_Baujahr_1966.jpg" alt="Volkswagen Beetle">
+      </div>
+      <div class="meta">
+        <h3>Volkswagen Beetle <span class="year">1938</span></h3>
+        <p>El famoso Escarabajo, icono del siglo XX.</p>
+        <div class="tags"><span class="tag">Alemania</span><span class="tag">Clásico</span></div>
+      </div>
+    </article>
+
+    <!-- Jaguar E-Type -->
+    <article class="card" data-keywords="jaguar e-type 1961 reino unido europa">
+      <div class="thumb">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/jaguar-classic-e-type-01-671a82695236f.jpg" alt="Jaguar E-Type">
+      </div>
+      <div class="meta">
+        <h3>Jaguar E-Type <span class="year">1961</span></h3>
+        <p>Uno de los autos más bellos jamás creados.</p>
+        <div class="tags"><span class="tag">Reino Unido</span><span class="tag">Deportivo</span></div>
+      </div>
+    </article>
+
+  </div>
+</article>
+
+<!-- NORTEAMÉRICA -->
+<article class="continent" id="norte-america">
+  <h2>Norteamérica — Muscle & Leyendas</h2>
+  <div class="cards">
+
+    <!-- Ford Model T -->
+    <article class="card" data-keywords="ford model t 1908 eeuu">
+      <div class="thumb">
+        <img src="https://mgarage.com.mx/wp-content/cache/thumbnails/2016/11/AAAA1912-ford-model-t-1200x480-c.jpg" alt="Ford Model T">
+      </div>
+      <div class="meta">
+        <h3>Ford Model T <span class="year">1908</span></h3>
+        <p>Revolucionó la producción en masa.</p>
+        <div class="tags"><span class="tag">EE.UU.</span><span class="tag">Historia</span></div>
+      </div>
+    </article>
+
+    <!-- Corvette C1 -->
+    <article class="card" data-keywords="corvette c1 1953 eeuu deportivo">
+      <div class="thumb">
+        <img src="https://lacarrerapanamericana.com.mx/wp-content/uploads/2023/06/Chevrolet-Corvette-C1.jpg" alt="Corvette C1">
+      </div>
+      <div class="meta">
+        <h3>Corvette C1 <span class="year">1953</span></h3>
+        <p>Deportivo icónico estadounidense.</p>
+        <div class="tags"><span class="tag">EE.UU.</span><span class="tag">Deportivo</span></div>
+      </div>
+    </article>
+
+  </div>
+</article>
+
+<!-- SUDAMÉRICA -->
+<article class="continent" id="sur-america">
+  <h2>Sudamérica — Populares</h2>
+  <div class="cards">
+
+    <!-- Fusca -->
+    <article class="card" data-keywords="fusca brasil volkswagen beetle">
+      <div class="thumb">
+        <img src="https://imagenes.20minutos.es/files/image_1280_720/files/fp/uploads/imagenes/2022/01/25/fotografia-de-un-seat-600-con-una-baca.r_d.629-433-10000.jpeg" alt="Fusca">
+      </div>
+      <div class="meta">
+        <h3>Volkswagen Fusca <span class="year">1950–1980</span></h3>
+        <p>El Beetle brasileño, accesible y duradero.</p>
+        <div class="tags"><span class="tag">Brasil</span><span class="tag">Popular</span></div>
+      </div>
+    </article>
+
+    <!-- Fiat 600 -->
+    <article class="card" data-keywords="fiat 600 argentina">
+      <div class="thumb">
+        <img src="https://acnews.blob.core.windows.net/imgnews/paragraph/NPAZ_0c02e0d303a54cc3b8134ba98897b9f5.jpg" alt="Fiat 600">
+      </div>
+      <div class="meta">
+        <h3>Fiat 600 <span class="year">1955</span></h3>
+        <p>Compacto económico adoptado en Latinoamérica.</p>
+        <div class="tags"><span class="tag">Argentina</span><span class="tag">Económico</span></div>
+      </div>
+    </article>
+
+  </div>
+</article>
+
+<!-- OCEANÍA -->
+<article class="continent" id="oceania">
+  <h2>Oceanía</h2>
+  <div class="cards">
+
+    <!-- Holden Commodore -->
+    <article class="card" data-keywords="holden commodore australia">
+      <div class="thumb">
+        <img src="https://www.excelenciasdelmotor.com/sites/default/files/sites/default/files/imagenes-portada-ffp/holden-commodore-1978-1980-1.jpg" alt="Holden Commodore">
+      </div>
+      <div class="meta">
+        <h3>Holden Commodore <span class="year">1978</span></h3>
+        <p>Popular sedán australiano.</p>
+        <div class="tags"><span class="tag">Australia</span></div>
+      </div>
+    </article>
+
+  </div>
+</article>
+
+<!-- ÁFRICA -->
+<article class="continent" id="africa">
+  <h2>África</h2>
+  <div class="cards">
+
+    <!-- Land Rover -->
+    <article class="card" data-keywords="land rover series africa">
+      <div class="thumb">
+        <img src="https://images.coches.com/_news_/2018/05/land_rover_series_i_80_soft_top_18-644x483.jpg" alt="Land Rover Series">
+      </div>
+      <div class="meta">
+        <h3>Land Rover Series <span class="year">1948</span></h3>
+        <p>Famoso vehículo utilitario y aventurero.</p>
+        <div class="tags"><span class="tag">África</span><span class="tag">Utilitario</span></div>
+      </div>
+    </article>
+
+  </div>
+</article>
+
+</section>
+
+</main>
+
+<footer style="text-align:center;margin:40px 0;color:#666">
+  <p>Jacobo Moisés Barajas López</p>
+</footer>
+
+</body>
+</html>
